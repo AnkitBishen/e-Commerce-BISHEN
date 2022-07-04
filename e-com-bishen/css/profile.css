@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,900;1,300;1,400;1,600&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,400&family=Ubuntu:wght@300&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+:root {
+  color: var(--font #555);
+  background-color: var(--back #333);
+}
+* html,
+body {
+  margin: 0;
+  font-size: 100%;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+header {
+  background: radial-gradient(#fff, #ffd6d6);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+a {
+  text-decoration: none;
+  color: var(--font);
+}
+p {
+  color: var(--font);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+.navbar nav ul {
+  list-style-type: none;
+  display: inline-block;
+}
+.navbar nav ul li {
+  z-index: 999;
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: bold;
+  /* border-radius: 0.1rem; */
+  padding: 0.1rem 0;
+  transition: 0.5s ease-in-out;
+  /* border-top: 0.1rem solid #ff523b; */
+  border-bottom: 0.1rem solid #ff523b;
+}
+.navbar nav ul li:hover {
+  transition: 0.5s ease-in-out;
+  transform: translateY(-0.5rem);
+  /* border-top: 0.1rem solid #ff523b; */
+  /* border-radius: 0.5rem; */
+  border-bottom: 0.2rem solid #ff523b;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 25px;
+  margin-right: 25px;
+  justify-content: space-around;
+}
+.menu-icon {
+    width: 25px;
+    margin-left: 20px;
+    display: none;
+  }
+  
+
+@media only screen and (max-width: 1100px) {
+    html {
+      font-size: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    nav ul {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      overflow: hidden;
+      background: #333;
+      width: 100%;
+      transition: 0.5s;
+    }
+    html {
+      font-size: 90%;
+    }
+    nav ul li a {
+      display: block;
+      margin-right: 250px;
+      line-height: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+    }
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+    .navbar nav ul li {
+      border: none;
+    }
+    .navbar nav ul li:hover {
+      border: none;
+      transform: scale(1);
+    }
+  }
+
+  /* media query for less than 600 screen size */
+@media only screen and (max-width: 600px) {
+    .row {
+      text-align: center;
+    }
+    .col-2,
+    .col-3,
+    .col-4 {
+      flex-basis: 100%;
+    }
+    .cart-info p {
+      display: none;
+    }
+  }
+  
+  /* <!-- name and pic section  --> */
+
+.f-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.sub-f-cont{
+    display: flex;
+}
+.pro-img{
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* background-image: url('../images/buy-2.jpg'); */
+    background-position: center;
+    background-size: cover;
+}
+/* .pro-img img{
+  border-radius: 50%;
+    border: 1px solid red;
+} */
+.name{
+    width: 100%;
+    padding-left: 8px;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.email-cont{
+  margin-left: 20px;
+  font-size: 20px;
+}
+.email-cont table tr{
+  padding:12px;
+}
+.s-cont{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.product{
+  padding: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.product:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, 
+              rgba(2, 2, 2, 0.3) 0px 8px 16px -8px;
+}
+.product h3{
+  margin: 0%;
+}
+
+#logout{
+  margin: 0%;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size:20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* edit profile ======== */
+.ep-container{
+  background-color: rgba(0, 0, 0, 0.156);
+  display:none;
+  justify-content:center;
+  z-index: 1;
+  align-items:center;
+  position: fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+}
+.ep-sub-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  padding: 28px 48px 28px 48px;
+  border-radius: 15px;
+}
+.ep-sub-cont input{
+  width: 100%;
+}
+#ep-save{
+  font-size: 15px;
+}

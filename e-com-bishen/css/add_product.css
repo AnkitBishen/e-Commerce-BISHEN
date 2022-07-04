@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,900;1,300;1,400;1,600&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,400&family=Ubuntu:wght@300&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+body{
+  background-color: rgba(128, 102, 36, 0.807);
+  
+}
+.main-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  text-align: center;
+}
+.container{
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: aliceblue;
+  padding: 18px;
+}
+input[type='submit']{
+  background-color: rgb(207, 166, 52);
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 6px;
+}

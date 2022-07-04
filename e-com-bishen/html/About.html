@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | E-commerce</title>
+
+    <!-- fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- css custom file -->
+    <link rel="stylesheet" href="../css/about.css" />
+    <!-- javascript custom file -->
+
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+         <a href="index.html"><h2 width="110px" style="font-family:wide latin; color: rgb(172, 32, 32);">BISHEN</h2></a> 
+        </div>
+        <nav>
+          <ul id="menuItems">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <!-- <li><a href="./About.html">About</a></li> -->
+            <li><a href="./Contact.html">Contact</a></li>
+            <li><a href="./Account.php">Account</a></li>
+          </ul>
+        </nav>
+        <a href="Account.html"><img src="..//images/cart.png" width="27px" height="27px" alt=""></a>
+        <img src="..//images/menu.png" class="menu-icon" onclick="menutoggle()">
+      </div>
+ </div>
+
+ <!-- simple product details -->
+  <div class="small-container single-product">
+      <div class="row">
+          <div class="col-2">
+               <center> <img src="../images/nike-air-max-270.jpg"  alt="" id="productImg"></center>
+                
+
+              <!-- <div class="small-img-row">
+                    <div class="small-img-col">
+                      <img src="../images/gallery-1.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../images/gallery-2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../images/gallery-3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../images/gallery-4.jpg" width="100%" class="small-img">
+                    </div>
+              </div> -->
+              
+            </div>
+
+          <div class="col-2">
+              <p>Home / Products</p>
+              <h1>Super white shoes nike air max <br>
+                <div class="rating">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                     </div>
+                </h1>
+              <h4>$149.00</h4>
+              
+              <select id="Size">
+                  <option>Select Size</option>
+                  <option>XXL</option>
+                  <option>XL</option>
+                  <option>Large</option>
+                  <option>Medium</option>
+                  <option>Small</option>
+              </select>
+              <input type="number" value="0"><br>
+              <a href="#" class="btn">Add To Cart</a>
+              <h3>Product Details <i class="fa fa-indent"></i></h3>
+              <br>
+              <p>Give Your summer wardrobe a style upgrade with the <br> nike men's Active Shoes. Team it with a pair of  shorts for<br> your  morning workout or a denims for an evening out with<br> the guys.</p>
+          </div>
+      </div>
+  </div>
+ 
+  <!-- -----title----- -->
+  <div class="small-container"> 
+      <div class="row row-2">
+         <h2>Related Product</h2>
+         <p>View more</p>
+      </div>
+ </div>
+    <!-- ----- Products------- -->
+<div class="small-container"> 
+    <div class="row">
+        <div class="col-4">
+            <img src="..//images/product-9.jpg" >
+            <h4>Rado watch for boys</h4>
+            <div class="rating">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+            </div>
+            <p>$90.00</p>
+        </div>
+        <div class="col-4">
+            <img src="..//images/product-10.jpg" >
+            <h4>Black and red shoes</h4>
+            <div class="rating">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star-half"></i></span>
+            </div>
+            <p>$30.00</p>
+        </div>
+        <div class="col-4">
+            <img src="..//images/product-11.jpg" alt="">
+            <h4>Grey Home shoes</h4>
+            <div class="rating">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star-half"></i></span>
+            </div>
+            <p>$70.00</p>
+        </div>
+        <div class="col-4">
+            <img src="..//images/product-12.jpg" alt="">
+            <h4>White informal shoes for mens</h4>
+            <div class="rating">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+            </div>
+            <p>$520.00</p>
+        </div>
+    </div>
+
+ 
+ <!-- --------- footer -------------- -->
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Downlad Our App</h3>
+                <p>Downlad App for Android and ios mobile.phone.</p>
+                <div class="app-logo">
+                    <img src="..//images/play-store.png" alt="">
+                    <img src="..//images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <h2 width="110px" style="font-family:wide latin; color: rgb(172, 32, 32);">BISHEN</h2>
+                <p>Our purpose Is TO Sustainably <br> Make the Pleasure and Benefits <br> of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+               <h3>Useful Links</h3>
+               <ul>
+                   <li>Coupons</li>
+                   <li>Blog Post</li>
+                   <li>Return</li>
+                   <li>Join Affiliate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Social media Links</h3>
+                <ul>
+                    <li>Follow us</li>
+                    <li>facebook </li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+             </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 BISHEN All Rights Reserved</p>
+    </div>
+</div>
+
+    <script src="../javascript/About.js"></script>
+  </body>
+</html>
